@@ -4,4 +4,4 @@ Change git third time!
 understand how stage works;
 git tracks!again
 branch test!!!12
-merge with no-ff
+merge with no-ff fixed bug
