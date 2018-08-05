@@ -1,0 +1,47 @@
+mkdir learngit
+cd learngit
+pwd  ---(查看当前路径)
+git init
+ls -ah ---(查看隐藏文件)
+git add 
+git commit -m"submit message"
+git status 
+git diff
+git log -2 --pretty=oneline
+用HEAD表示当前版本，上一个版本就是HEAD^，上上一个版本就是HEAD^^，当然往上100个版本写100个^比较容易数不过来，所以写成HEAD~100。
+cat readme.txt ---(查看文件)
+git reset --hard HEAD^(返回到上个版本)
+git reset --hard 66a2 (返回到指定版本)
+git reflog ---(用来记录每一次的命令)
+
+.git隐藏目录 就是版本库
+暂存区
+git add把文件加进去，实际上就是把文件修改添加到暂存区
+git commit提交修改，实际上就是把暂存区的所有内容提交到当前分支
+git diff HEAD -- readme.txt
+
+git checkout -- readme.txt ---(可以丢弃工作区的修改)
+1.没有git add的情况 回到最近一次git commit的情况
+	1.git checkout -- readme.txt
+2.已经git add的情况 回到最近一次git add的情况
+	1.git reset HEAD readme.txt
+	2.git checkout -- readme.txt
+	
+	
+删除文件
+git add tets.txt
+git commit -m"add"
+rm test.txt
+git status
+git rm teat.txt ---(git rm用于删除一个文件)
+git commit -m'remove'	
+
+误删除
+git checkout -- test.txt
+
+gihub
+创建SSH Key:ssh-keygen -t rsa -C "youremail@example.com"
+要关联一个远程库，使用命令git remote add origin git@server-name:path/repo-name.git；
+关联后，使用命令git push -u origin master第一次推送master分支的所有内容；
+
+	
