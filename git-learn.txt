@@ -1,3 +1,7 @@
+配置git：
+git config --global user.name "Your Name"
+git config --global user.email "email@example.com"
+
 mkdir learngit --(创建文件夹)
 cd learngit
 pwd  ---(查看当前路径)
