@@ -43,6 +43,9 @@ git commit -m'remove'
 误删除
 git checkout -- test.txt
 
+某个文件恢复到指定的版本
+git checkout 3c9cfd320fe7 src/test.vue
+
 gihub
 创建SSH Key:ssh-keygen -t rsa -C "youremail@example.com"
 要关联一个远程库，使用命令git remote add origin git@server-name:path/repo-name.git；
