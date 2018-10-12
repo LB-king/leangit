@@ -53,7 +53,7 @@ gihub
 
 git log
 git log --graph --pretty=oneline --abbrev-commit 
-查看提交状态
+查看分支合并状况
 
 
 
